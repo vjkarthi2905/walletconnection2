@@ -15,6 +15,9 @@ export default defineConfig({
       }
     }
   },
+  optimizeDeps: {
+    include: ['@web3modal/wagmi', 'viem', 'wagmi']
+  },
   server: {
     port: 3000,
     open: true
